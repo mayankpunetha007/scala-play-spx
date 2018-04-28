@@ -1,0 +1,14 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+POST     /post                           controllers.PostController.newPost
+# An example controller showing how to use dependency injection
+GET      /posts                          controllers.PostController.getPosts
+# An example controller showing how to write asynchronous code
+DELETE   /post                           controllers.PostController.delete
+
+GET     /nearby                          controllers.PostController.location
+      
