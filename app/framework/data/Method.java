@@ -1,6 +1,6 @@
 package framework.data;
 
-public enum Method{
+public enum Method {
 
-  POST, GET, DELETE, PUT;
+    POST, GET, DELETE, PUT;
 }
