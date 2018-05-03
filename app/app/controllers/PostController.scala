@@ -9,7 +9,7 @@ import play.api.mvc._
 class PostController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
 
-  @Mapping(classOf[NewPostRequest], classOf[NewPostResponse], Method.POST)
+  @Mapping(request = classOf[NewPostRequest], response = classOf[NewPostResponse], method = Method.POST, url = "/post ")
   def newPost = Action { request =>
     val json = request.body.asJson.get
     Ok("Hellp")
